@@ -1,21 +1,21 @@
-import Home from "@/app/page";
-import About from "@/pages/About";
-import Contact from "@/pages/Contact";
+import ContactPage from "@/app/contact/page";
+import AboutPage from "@/app/about/page";
+import BlogPage from "@/app/blog/page";
 
 export const NAV_LINKS = [
 	{
-		path: "/home",
-		name: "Home",
-		component: <Home />,
-	},
-	{
 		path: "/contact",
 		name: "Contact",
-		component: <Contact />,
+		component: <ContactPage />,
 	},
 	{
 		path: "/about",
 		name: "About",
-		component: <About />,
+		component: <AboutPage />,
+	},
+	{
+		path: "/blog",
+		name: "Blog",
+		component: <BlogPage />,
 	},
 ];
